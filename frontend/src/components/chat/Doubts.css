@@ -1,0 +1,192 @@
+.doubt-body{
+    border: 1px solid black;
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 15px;
+    overflow-y: hidden;
+    position: relative;
+}
+.doubt-body *{
+    text-decoration: none;
+}
+.doubt-body::-webkit-scrollbar{
+    display: none;
+}
+
+.doubt-body h1{
+    color: #000;
+    font-size: 36px;
+    margin-bottom: 10px;
+    /* position: fixed; */
+}
+
+.doubt{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow:  0px 2px 5px 0px #838383;
+}
+.doubt-body img{
+    width: 55px;
+    height: 55px;
+}
+.doubt-info{
+    margin-left: 10px;
+}
+.doubt-info .name{
+    color: #414443;
+    font-size: 14px;
+}
+.doubt-info .question{
+    color: #000;
+    font-size: 20px;
+    
+}
+.doubt-info .time{
+    color: #847E7E;
+    font-size: 11px;
+    font-weight: 500;
+}
+.solved-mark{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    color: #0BFF06;
+    font-size: 10px;
+    font-weight: 700;
+}
+.doubt.solved > .solved-mark{
+    display: flex;
+}
+.solved-mark p{
+    border: 0;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #d8ffd8;
+}
+
+.doubt-messages{
+    position: relative;
+}
+.doubt-messages img{
+    width: 40px;    
+    height: 40px;
+}
+.user-details{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.user-details .name{
+    color: #414443;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 300;
+}
+.user-details .class{
+    color: #414443;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 300;
+}
+.user-details .doubt-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question-body{
+    padding: 15px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px 1px gray;
+    margin-bottom: 20px;
+}
+.question-body svg{
+    margin-right: 10px;
+    min-width: 45px;
+    max-width: 45px;
+}
+.messages{
+    overflow-y: scroll;
+    max-height: 240px;
+}
+.messages::-webkit-scrollbar{
+    width: 10px;
+    color: black;
+}
+
+.message{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.message img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.message img:first-child{
+    margin-right: 10px;
+}
+.message img:last-child{
+    margin-left: 10px;
+}
+.message.me img:last-child{
+    display: none;
+}
+.message.others img:first-child{
+    display: none;
+}
+
+.message-body{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(221, 221, 221);
+}
+.message-body small{
+    color: #515151;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.message-field{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+.message-field input{
+    border-radius: 10px;
+    border: 1px solid rgb(170, 170, 170);
+    width: 100%;
+    margin-right: 10px;
+    padding: 10px;
+    transition: 500ms outline;
+}
+.message-field input:focus{
+    outline: 1px solid #5DDCD6;
+}
+.message-field button{
+    background-color: white;
+    border: 0;
+}
+.message-field svg{
+    width: 30px;
+    height: 30px;
+    transition: 0.5s transform;
+}
+.message-field svg path{
+    fill: #5DDCD6;
+}
+.message-field button:hover svg{
+    transform: scale(1.1);
+}
+.message-field button:hover svg path{
+    fill-rule: evenodd;
+}
